@@ -5,26 +5,26 @@
                       
                         <mat-form-field class="example-full-width">
                                 <input matInput placeholder="Decimal" formControlName="decimal"
-                                (ngModelChange)="decimalChanged(oldValue, newValue = $event)"
+                                (ngModelChange)="decimalChanged($event)"
                                 autofocus>
                         </mat-form-field>
                         <br>
                         <mat-form-field class="example-full-width">
                                 <input matInput formControlName="binary"
-                                (ngModelChange)="binaryChanged(oldValue, newValue = $event)"
+                                (ngModelChange)="binaryChanged($event)"
                                 placeholder="Binary">
                         </mat-form-field>
                         <br>
                         <mat-form-field class="example-full-width">
                                 <input matInput formControlName="octal"
-                                (ngModelChange)="octalChanged(oldValue, newValue = $event)"
+                                (ngModelChange)="octalChanged($event)"
                                 placeholder="Octal">
                         </mat-form-field>
                         <br>
                         <mat-form-field class="example-full-width">
                                 <input matInput placeholder="Hex" 
                                 formControlName="hexa"
-                                (ngModelChange)="hexChanged(oldValue, newValue = $event)">
+                                (ngModelChange)="hexChanged($event)">
                         </mat-form-field>
                         <br>
                     

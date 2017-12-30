@@ -29,7 +29,7 @@ form;
     this.form.patchValue({decimal:""});
   }
   
-  decimalChanged(oldValue, newValue){
+  decimalChanged(newValue){
   if(newValue != ""){
     this.form.patchValue({binary: parseInt(newValue, 10).toString(2)});
     this.form.patchValue({octal: parseInt(newValue, 10).toString(8)})
@@ -41,7 +41,7 @@ form;
   }
   }
   
-  binaryChanged(oldValue, newValue){
+  binaryChanged(newValue){
     this.binaryCount += 1;
   
     if(this.binaryCount == 1){
@@ -56,7 +56,7 @@ form;
     }
   
   
-    octalChanged(oldValue, newValue){
+    octalChanged(newValue){
       this.octalCount += 1;
     
       if(this.octalCount == 1){
@@ -70,7 +70,7 @@ form;
       
       }
   
-      hexChanged(oldValue, newValue){
+      hexChanged(newValue){
         this.hexCount += 1;
       
         if(this.hexCount == 1){
